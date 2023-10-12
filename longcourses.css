@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0px;
@@ -6,9 +6,24 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-body{
-    height: 350vh;
+body {
+  background-color: rgb(245, 245, 245) !important;
 }
+nav {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  margin-bottom: 20px;
+}
+#nav-img {
+  width: 160px;
+}
+.nav-link {
+  font-size: 19px !important;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
 .section-title2 {
   padding: 25px 0;
   font-weight: 500;
@@ -28,7 +43,7 @@ body{
   background: #fff;
   border: 2px solid #13573a;
   box-shadow: 0 0 0 5px #fff;
-  top: 68px;
+  top: 76px;
 }
 
 .section-title2::before {
@@ -36,48 +51,223 @@ body{
   content: "";
   height: 2px;
   width: 120px;
-  top: 72px;
+  top: 80px;
   background: #1e3d7e;
 }
+.card {
+  width: 70rem;
+}
 .cards-section {
-    padding: 90px;
-    height: 20px;
-  }
-.card-text{
-    font-size: 10px;
-    font-weight: bold;
-    border-radius: 10px; 
-  }
-  .card-body{
-    background-color: #d3e2e8;
-  }
-  .card-body h2{
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .card-img-top {
-    height: 190px;
-    object-fit: cover;
-  }
-  .textt{
-    font-size: 20px;
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.card-body {
+  border-radius: 18px;
+}
+.card-body.first {
+  background: linear-gradient(to top, rgb(35, 35, 35), rgb(1, 1, 106));
+}
+.card-body.second {
+  background: linear-gradient(to top, rgb(35, 35, 35), rgb(110, 0, 0));
+}
+.card-body.third {
+  background: linear-gradient(to top, rgb(50, 50, 50), rgb(0, 67, 0));
+}
+.card-text {
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
 
+.card-body h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+  padding-bottom: 3px;
+  padding-top: 7px;
+}
+
+.textt {
+  font-size: 20px;
+  color: white;
+}
+.card-body h2::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: -10px;
+  background-color: rgb(244, 242, 242);
+  height: 2px;
+  width: 40%;
+}
+.main {
+  border-bottom: 1px solid rgb(152, 152, 152);
+}
+.main li {
+  padding: 5px;
+}
+.course-details {
+  color: white;
+  padding-top: 18px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.price {
+  font-size: 22px;
+}
+.duration {
+  display: flex;
+  gap: 10px;
+}
+.duration i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+.duration span {
+  font-size: 22px;
+}
+.footerr {
+  background-size: 100%;
+  padding: 30px 30px 10px 30px;
+  margin-top: 20px;
+  background-color: rgb(0, 0, 65);
+}
+.footerr ul {
+  padding-left: 0rem;
+}
+.container2 {
+  max-width: 1250px;
+  margin: auto;
+}
+.roww {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-col {
+  width: 25%;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col ul li {
+  color: #bbbbbb;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  line-height: 30px;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -21.5px;
+    background-color: black;
+    font-weight: normal;
+    border-radius: 1px;
+    height: 3px;
+    box-sizing: border-box;
+    width: 85px;
   }
-  .price{
-    border: 1px solid black;
-    width: 80%;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
   }
-  .courses{
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+  #navmenu {
+    padding-top: 10px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .course-details {
+    margin-left: 10px;
+  }
+  ul {
+    padding-left: 1.2rem !important;
+  }
+  .main li {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .cards-section {
+    padding-top: 0px;
+    padding: 13px;
+  }
+  .card-body h2 {
+    font-size: 20px;
+  }
+  .main li {
     font-size: 16px;
   }
-  .main{
-    display: flex;
-    gap: 50%;
+  .course-details {
+    margin-left: 5px;
   }
+  .price {
+    font-size: 18px;
+  }
+  .duration i {
+    font-size: 18px;
+  }
+  .duration span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
