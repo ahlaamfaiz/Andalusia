@@ -26,45 +26,47 @@ nav {
   position: relative;
 }
 
-.preview {
-  background-image: url(images/aboutus4.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.preview h1 {
-  font-size: 40px;
-}
-.image {
-  background-color: white;
-}
 .image img {
   width: 200px;
 }
+
 #learn {
   background-color: rgb(245, 245, 245);
 }
 #learn p {
-  font-size: 17px;
+  font-size: 18px;
 }
-#vision-heading {
-  color: green;
-  margin-bottom: 20px;
+#about-heading {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  font-size: 34px;
 }
+
+#about-heading::before {
+  content: "";
+  position: absolute;
+  left: 42%;
+  bottom: -10px;
+  background-color: black;
+  height: 2px;
+  width: 16%;
+}
+.mission {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.mission p {
+  text-align: center;
+  font-size: 18px;
+}
+
 #vision-img {
-  border-radius: 15px;
+  border-radius: 8px;
 }
-#vision-btn {
-  background: darkblue;
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-}
+
 #image-container {
   display: flex;
   justify-content: center;
@@ -103,10 +105,22 @@ nav {
   flex-wrap: wrap;
   gap: 30px;
 }
-
+.image h4 {
+  text-align: center;
+  margin-top: 12px;
+}
 .images img {
   border-radius: 10px;
   width: 400px;
+  height: 275px;
+}
+#videoElement {
+  margin-top: 34px;
+  width: 97%;
+}
+.video-container {
+  display: flex;
+  align-items: center;
 }
 .sponsors {
   display: flex;
@@ -116,7 +130,11 @@ nav {
 }
 .sponsor img {
   width: 130px;
-  height: 130px;
+  height: 100px;
+  object-fit: contain;
+}
+.sponsor .special {
+  object-fit: cover;
 }
 
 #partners {
@@ -139,29 +157,7 @@ nav {
   height: 2px;
   width: 16%;
 }
-#individual {
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 30px;
-}
-#individual h2 {
-  position: relative;
-  margin-bottom: 40px;
-  text-align: center;
-  padding-top: 15px;
-}
-#individual h2::before {
-  content: "";
-  position: absolute;
-  left: 42%;
-  bottom: -10px;
-  background-color: black;
-  height: 2px;
-  width: 16%;
-}
-#individual h4 {
-  padding-top: 10px;
-}
+
 #contacts {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -240,16 +236,46 @@ nav {
   color: white;
   border-radius: 9px;
 }
-.hours-heading {
+
+#message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#message h2 {
+  margin-bottom: 25px;
+}
+#message form {
+  display: flex;
+  flex-direction: column;
+}
+
+#message input {
+  padding: 12px;
   margin-bottom: 20px;
-  color: green;
+  border-radius: 8px;
+}
+#message textarea {
+  border-radius: 8px;
+  padding: 12px;
+  text-align: left;
+}
+#message button {
+  padding: 12px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 70);
 }
 
 .footerr {
   background-size: 100%;
   padding: 30px 30px 10px 30px;
-  margin-top: 20px;
-  background-color: rgb(0, 0, 65);
+  margin-top: 60px;
+  background-color: rgb(0, 0, 70);
 }
 .footerr ul {
   padding-left: 0rem;
@@ -328,19 +354,21 @@ nav {
   .content {
     width: 80%;
   }
-
+  .video-container {
+    justify-content: center;
+  }
   .images {
     justify-content: center;
   }
   #gallery h1::before {
     left: 42%;
   }
+  #videoElement {
+    width: 85%;
+  }
 }
 
 @media (max-width: 990px) {
-  .images img {
-    width: 243px;
-  }
   #contacts {
     padding-top: 20px;
   }
@@ -361,10 +389,11 @@ nav {
     width: 25%;
     left: 37%;
   }
-  #individual h2::before {
+  #about-heading::before {
     width: 25%;
-    left: 37%;
+    left: 36%;
   }
+
   #contacts h1::before {
     width: 25%;
     left: 36%;
@@ -413,10 +442,30 @@ nav {
 @media (max-width: 700px) {
   .images img {
     width: 330px;
+    height: unset;
+  }
+  #videoElement {
+    width: 330px;
   }
   #gallery h1::before {
     left: 30%;
     width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  #message button {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #message textarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #message input {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 574px) {
@@ -431,11 +480,10 @@ nav {
   #partners h1::before {
     width: 30%;
   }
-  #contacts h1::before {
+  #about-heading::before {
     width: 30%;
   }
-  #individual h2::before {
-    width: 50%;
-    left: 26%;
+  #contacts h1::before {
+    width: 30%;
   }
 }
