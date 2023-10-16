@@ -250,7 +250,7 @@ nav {
 }
 @media (max-width: 500px) {
   .cardd {
-    width: 92%;
+    width: 100%;
   }
   .card-image {
     width: 100%;
