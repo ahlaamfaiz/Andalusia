@@ -247,6 +247,11 @@ body {
     gap: 0px;
     text-align: center;
   }
+  .about-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .about-pic img {
     width: 500px;
     height: unset;
