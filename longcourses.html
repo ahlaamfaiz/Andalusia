@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand">
@@ -38,14 +39,14 @@
               <a href="service.html" class="nav-link active">Services</a>
             </li>
             <li class="nav-item">
-              <a href="contacts.html" class="nav-link">Contact Us</a>
+              <a href="contacts.html" class="nav-link">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="section">
-      <div class="section-title2">
+      <div class="longc-title">
         <h1>Long Courses</h1>
       </div>
       <div class="cards-section">
@@ -120,7 +121,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
-              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -157,5 +158,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

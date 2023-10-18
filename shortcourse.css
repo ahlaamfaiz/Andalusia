@@ -25,7 +25,8 @@ nav {
 .nav-link.active {
   position: relative;
 }
-.section-title2 {
+
+.shortc-title {
   padding: 25px 0;
   font-weight: 500;
   font-size: 36px;
@@ -36,7 +37,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.section-title2::after {
+.shortc-title::after {
   position: absolute;
   content: "";
   height: 10px;
@@ -48,7 +49,7 @@ nav {
   top: 68px;
 }
 
-.section-title2::before {
+.shortc-title::before {
   position: absolute;
   content: "";
   height: 2px;

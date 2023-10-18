@@ -45,7 +45,7 @@
                 <a href="service.html" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="contacts.html" class="nav-link">Contact Us</a>
+                <a href="contacts.html" class="nav-link">Contacts</a>
               </li>
             </ul>
           </div>
@@ -53,7 +53,10 @@
       </nav>
       <div class="preview">
         <div class="heading">
-          <h2>Welcome To The <span class="andalusia-text">Andalusia </span>World!</h2>
+          <h2>
+            Welcome To The
+            <span data-text="Andalusia World! " class="andalusia-text">Andalusia World! </span>
+          </h2>
           <p>
             Your one stop solution for the best tutoring, library services, counselling sessions and many more. To check out all our services click
             the link below!
@@ -84,37 +87,38 @@
         <img src="images/about2.webp" alt="" />
       </div>
     </div>
-
-    <div class="service">
-      <h2>OUR SERVICES</h2>
-      <section class="section">
-        <div class="cards-section">
-          <div class="cards d-flex gap-5 align-items-center justify-content-center flex-wrap">
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/lib5.webp" alt="" id="library-img" />
-                <h3>Library</h3>
-                <p>Enjoy reading in an AC room!</p>
+    <div class="reveal">
+      <div class="service">
+        <h2>OUR SERVICES</h2>
+        <section class="section">
+          <div class="cards-section">
+            <div class="cards d-flex gap-5 align-items-center justify-content-center flex-wrap">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/lib5.webp" alt="" id="library-img" />
+                  <h3>Library</h3>
+                  <p>Enjoy reading in an AC room!</p>
+                </div>
               </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/counselling.webp" alt="" class="img-fluid" />
-                <h3>Counselling</h3>
-                <p>Book your free counselling session now!</p>
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/counselling.webp" alt="" class="img-fluid" />
+                  <h3>Counselling</h3>
+                  <p>Book your free counselling session now!</p>
+                </div>
               </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/courses.webp" alt="" id="courses-img" />
-                <h3>Courses</h3>
-                <p>Choose from a variety of courses that we offer!</p>
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/courses.webp" alt="" id="courses-img" />
+                  <h3>Courses</h3>
+                  <p>Choose from a variety of courses that we offer!</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <a href="service.html"><button class="service-button">View More</button></a>
-      </section>
+          <a href="service.html"><button class="service-button">View More</button></a>
+        </section>
+      </div>
     </div>
 
     <footer class="footerr">
@@ -126,7 +130,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
-              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -169,6 +173,24 @@
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
+    </script>
+    <script>
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
     </script>
   </body>
 </html>

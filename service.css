@@ -17,6 +17,13 @@ nav {
 #nav-img {
   width: 160px;
 }
+#preloader {
+  background: white url(images/preloader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 .nav-link {
   font-size: 19px !important;
 }
@@ -32,10 +39,7 @@ nav {
   background-color: rgb(5, 5, 5);
   border: 2px solid rgb(5, 5, 5);
 }
-#s3 {
-  background-color: orange;
-  border: 2px solid orange;
-}
+
 .h1 {
   position: relative;
   margin-bottom: 50px;

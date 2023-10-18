@@ -9,6 +9,23 @@
 body {
   background-color: rgb(245, 245, 245) !important;
 }
+#preloader {
+  background: white url(images/preloader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 nav {
   border-bottom: 1px solid rgb(179, 179, 179);
@@ -24,7 +41,7 @@ nav {
 .nav-link.active {
   position: relative;
 }
-.section-title2 {
+.workshop-title {
   padding: 25px 0;
   font-weight: 500;
   font-size: 36px;
@@ -35,7 +52,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.section-title2::after {
+.workshop-title::after {
   position: absolute;
   content: "";
   height: 10px;
@@ -46,13 +63,17 @@ nav {
   box-shadow: 0 0 0 5px #fff;
   top: 68px;
 }
-.section-title2::before {
+.workshop-title::before {
   position: absolute;
   content: "";
   height: 2px;
   width: 120px;
   top: 72px;
   background: #1e3d7e;
+}
+.img {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .img img {
@@ -79,6 +100,9 @@ nav {
   height: 2px;
   width: 16%;
 }
+#individual h4 {
+  padding-top: 10px;
+}
 .events h2 {
   position: relative;
   margin-bottom: 40px;
@@ -95,13 +119,6 @@ nav {
   width: 16%;
 }
 
-#individual h4 {
-  padding-top: 10px;
-}
-.img {
-  text-align: center;
-  margin-bottom: 30px;
-}
 .footerr {
   background-size: 100%;
   padding: 30px 30px 10px 30px;

@@ -6,8 +6,8 @@
     <title>Browse Our Workshops!</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand">
@@ -37,14 +38,14 @@
               <a href="service.html" class="nav-link active">Services</a>
             </li>
             <li class="nav-item">
-              <a href="contacts.html" class="nav-link">Contact Us</a>
+              <a href="contacts.html" class="nav-link">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="workshops">
-      <div class="section-title2">
+      <div class="workshop-title">
         <h2>Workshops</h2>
       </div>
       <div class="img">
@@ -60,35 +61,37 @@
         <h4>Sales and Customer Care Workshop</h4>
       </div>
     </section>
-
-    <section id="individual">
-      <h2>More WorkShops</h2>
-      <div class="container">
-        <h4>3. E Filing and Revenue Gateway System</h4>
-        <h4>4. Teachers Capacity Buidling workshop</h4>
-        <h4>5. Peak Performance Workshop</h4>
-        <h4>6. Leadership Skills workshop</h4>
-        <h4>7. Entrpereneurship Workshop</h4>
-        <h4>8. Emotional Development</h4>
-        <h4>9. First Aid and Fire Training</h4>
-        <h4>10. Digital Marketing</h4>
-        <h4>11. FInside Islamic Banking</h4>
-      </div>
-    </section>
-    <section class="events">
-      <div class="h1">
-        <h2>Andalusia Events</h2>
-      </div>
-      <div class="img">
-        <img src="images/w1.webp" />
-        <h4>Andalusia Football Tournament</h4>
-      </div>
-      <div class="img">
-        <img src="images/w4.webp" />
-        <h4>Career Day</h4>
-      </div>
-    </section>
-
+    <div class="reveal">
+      <section id="individual">
+        <h2>More WorkShops</h2>
+        <div class="container">
+          <h4>3. E Filing and Revenue Gateway System</h4>
+          <h4>4. Teachers Capacity Buidling workshop</h4>
+          <h4>5. Peak Performance Workshop</h4>
+          <h4>6. Leadership Skills workshop</h4>
+          <h4>7. Entrpereneurship Workshop</h4>
+          <h4>8. Emotional Development</h4>
+          <h4>9. First Aid and Fire Training</h4>
+          <h4>10. Digital Marketing</h4>
+          <h4>11. FInside Islamic Banking</h4>
+        </div>
+      </section>
+    </div>
+    <div class="reveal">
+      <section class="events">
+        <div class="h1">
+          <h2>Andalusia Events</h2>
+        </div>
+        <div class="img">
+          <img src="images/w1.webp" />
+          <h4>Andalusia Football Tournament</h4>
+        </div>
+        <div class="img">
+          <img src="images/w4.webp" />
+          <h4>Career Day</h4>
+        </div>
+      </section>
+    </div>
     <footer class="footerr">
       <div class="container2">
         <div class="roww">
@@ -98,7 +101,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
-              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -135,5 +138,29 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>

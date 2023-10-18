@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Andalusia Training Center!</title>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -27,6 +21,7 @@
     <link rel="stylesheet" href="aboutus.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand">
@@ -48,7 +43,7 @@
               <a href="service.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="contacts.html" class="nav-link">Contact Us</a>
+              <a href="contacts.html" class="nav-link">Contacts</a>
             </li>
           </ul>
         </div>
@@ -88,241 +83,197 @@
         </div>
       </div>
     </section>
-    <section id="instructors" class="p-5">
-      <div class="container">
-        <h2 class="text-center text-white mb-5">Our Instructors</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor1.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Ally Sadik</h3>
-                <p class="card-text lead">Graphic Design Trainer</p>
+    <div class="reveal">
+      <section id="instructors" class="p-5">
+        <div class="container">
+          <h2 class="text-center text-white mb-5">Our Instructors</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor1.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Ally Sadik</h3>
+                  <p class="card-text lead">Graphic Design Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor2.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Lujaina Abdallah</h3>
-                <p class="card-text lead">QuickBooks Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor2.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Lujaina Abdallah</h3>
+                  <p class="card-text lead">QuickBooks Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor3.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Juma Kassim</h3>
-                <p class="card-text lead">Programming Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor3.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Juma Kassim</h3>
+                  <p class="card-text lead">Programming Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor4.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Ejaz Bhalloo</h3>
-                <p class="card-text lead">Public Speaking Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor4.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Ejaz Bhalloo</h3>
+                  <p class="card-text lead">Public Speaking Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor5.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Saleh Baasas</h3>
-                <p class="card-text lead">Tally & Accounting Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor5.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Saleh Baasas</h3>
+                  <p class="card-text lead">Tally & Accounting Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor6.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Amjad Faikh</h3>
-                <p class="card-text lead">Arabic & Chinese Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor6.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Amjad Faikh</h3>
+                  <p class="card-text lead">Arabic & Chinese Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/salim.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Salim Awadh</h3>
-                <p class="card-text lead">Basic Computer Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/salim.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Salim Awadh</h3>
+                  <p class="card-text lead">Basic Computer Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/tunu.webp" alt="" class="rounded-circle mb-3" />
-                <h3 class="card-title mb-3">Tunu Joseph</h3>
-                <p class="card-text lead">English & Kiswahili Trainer</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/tunu.webp" alt="" class="rounded-circle mb-3" />
+                  <h3 class="card-title mb-3">Tunu Joseph</h3>
+                  <p class="card-text lead">English & Kiswahili Trainer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img src="images/instructor11.webp" alt="" class="img-fluid rounded-circle mb-2" />
-                <h3 class="card-title mb-3">Abdullah Al-Baiti</h3>
-                <p class="card-text lead">Counsellor & Manager</p>
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="images/instructor11.webp" alt="" class="img-fluid rounded-circle mb-2" />
+                  <h3 class="card-title mb-3">Abdullah Al-Baiti</h3>
+                  <p class="card-text lead">Counsellor & Manager</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="gallery" class="p-5">
-      <div class="container">
-        <h1>Gallery</h1>
-        <div class="images">
-          <div class="image">
-            <img src="images/gallery9.webp" alt="" />
-            <h4>Training</h4>
+      </section>
+    </div>
+    <div class="reveal">
+      <section id="gallery" class="p-5">
+        <div class="container">
+          <h1>Gallery</h1>
+          <div class="images">
+            <div class="image">
+              <img src="images/gallery9.webp" alt="" />
+              <h4>Training</h4>
+            </div>
+            <div class="image">
+              <img src="images/gallery2.webp" alt="" />
+              <h4>Conference Room</h4>
+            </div>
+            <div class="image">
+              <img src="images/gallery3.webp" alt="" />
+              <h4>Library</h4>
+            </div>
+            <div class="image">
+              <img src="images/gallery10.webp" alt="" />
+              <h4>Reception</h4>
+            </div>
+            <div class="image">
+              <img src="images/gallery5.webp" alt="" />
+              <h4>Computer Room</h4>
+            </div>
+            <div class="image">
+              <img src="images/gallery8.webp" alt="" />
+              <h4>3rd Floor</h4>
+            </div>
           </div>
-          <div class="image">
-            <img src="images/gallery2.webp" alt="" />
-            <h4>Conference Room</h4>
-          </div>
-          <div class="image">
-            <img src="images/gallery3.webp" alt="" />
-            <h4>Library</h4>
-          </div>
-          <div class="image">
-            <img src="images/gallery10.webp" alt="" />
-            <h4>Reception</h4>
-          </div>
-          <div class="image">
-            <img src="images/gallery5.webp" alt="" />
-            <h4>Computer Room</h4>
-          </div>
-          <div class="image">
-            <img src="images/gallery8.webp" alt="" />
-            <h4>3rd Floor</h4>
+          <a href=""><button class="view-button">Watch the Full Tour</button></a>
+        </div>
+      </section>
+    </div>
+    <div class="reveal">
+      <section id="partners">
+        <h1>Our Partners</h1>
+        <div class="container">
+          <div class="sponsors">
+            <div class="sponsor">
+              <img src="images/sponsor1.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p8.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor8.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor4.webp" alt="" class="special" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor5.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p2.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor7.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p3.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor10.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor11.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor12.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor13.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor14.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/sponsor15.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p7.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p4.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p5.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p6.webp" alt="" />
+            </div>
+            <div class="sponsor">
+              <img src="images/p1.webp" alt="" />
+            </div>
           </div>
         </div>
-        <a href=""><button class="view-button">Watch the Full Tour</button></a>
-      </div>
-    </section>
-    <section id="partners">
-      <h1>Our Partners</h1>
-      <div class="container">
-        <div class="sponsors">
-          <div class="sponsor">
-            <img src="images/sponsor1.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p8.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor8.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor4.webp" alt="" class="special" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor5.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p2.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor7.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p3.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor10.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor11.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor12.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor13.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor14.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/sponsor15.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p7.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p4.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p5.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p6.webp" alt="" />
-          </div>
-          <div class="sponsor">
-            <img src="images/p1.webp" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section id="contacts">
-      <h1>CONTACT US</h1>
-      <div class="iframe-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5971602780523!2d39.272329573587974!3d-6.818750893178953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b3d628a271b%3A0xc437cf7a2d2fd444!2sAndalusia%20Training%20Center!5e0!3m2!1sen!2stz!4v1696611262059!5m2!1sen!2stz"
-          width="1100"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div class="content">
-        <div class="call">
-          <div class="i"><i class="fa-solid fa-phone"></i></div>
-          <div class="call-numbers">
-            <span> +255 786 960 747</span>
-            <span> +255 713 388 566 </span>
-          </div>
-        </div>
-        <div class="location">
-          <div class="i">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div class="location-area">
-            <span>Mafia/Swahili Street, Blg No, 60, 4th Floor</span>
-            <span>Kariakoo, Dar es Salaam </span>
-            <span>Tanzania</span>
-          </div>
-        </div>
-        <div class="email">
-          <div class="i">
-            <i class="fa-regular fa-envelope"></i>
-          </div>
-          <div class="email-address">
-            <span>typf.atc@gmail.com</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="message">
-      <h2>Send us a Message!</h2>
-      <form action="https://formsubmit.co/typf.atc@gmail.com" method="POST">
-        <input type="text" name="name" id="fname" placeholder="Full Name" required />
-        <input type="email" name="email" id="email" placeholder="Your Email" required />
-        <textarea name="message" id="message" cols="60" rows="7" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
     <footer class="footerr">
       <div class="container2">
         <div class="roww">
@@ -332,7 +283,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
-              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -369,5 +320,29 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
