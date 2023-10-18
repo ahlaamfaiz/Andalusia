@@ -345,3 +345,8 @@ nav {
     width: 30%;
   }
 }
+@media (max-width: 400px) {
+  .view-button {
+    width: unset;
+  }
+}

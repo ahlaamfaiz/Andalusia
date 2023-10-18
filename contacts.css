@@ -338,3 +338,11 @@ nav {
     left: 36%;
   }
 }
+@media (max-width: 450px) {
+  #message input {
+    width: 280px;
+  }
+  #message textarea {
+    width: 280px;
+  }
+}
