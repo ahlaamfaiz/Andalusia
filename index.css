@@ -329,6 +329,17 @@ body {
     width: 350px;
   }
 }
+@media (max-width: 504px) {
+  .preview h2 {
+    font-size: 21px;
+  }
+  .preview p {
+    font-size: 17px;
+  }
+  .preview {
+    width: 96%;
+  }
+}
 @media (max-width: 450px) {
   .card {
     width: 90%;
