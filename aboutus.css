@@ -83,6 +83,7 @@ nav {
 }
 #gallery {
   display: flex;
+  text-align: center;
 }
 #gallery h1 {
   text-align: center;
@@ -114,14 +115,17 @@ nav {
   width: 400px;
   height: 275px;
 }
-#videoElement {
-  margin-top: 34px;
-  width: 97%;
+.view-button {
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  background-color: rgb(1, 1, 100);
+  margin-top: 50px;
+  font-size: 20px;
+  width: 270px;
 }
-.video-container {
-  display: flex;
-  align-items: center;
-}
+
 .sponsors {
   display: flex;
   gap: 50px;
@@ -145,7 +149,6 @@ nav {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 60px;
-  padding-top: 15px;
   font-size: 34px;
 }
 #partners h1::before {
