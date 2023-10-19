@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse Our Long Courses!</title>
-    <link rel="icon" href="images/logo.jpg" />
+    <link rel="icon" href="images/logo.webp" />
 
     <link
       rel="stylesheet"
@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand">
-          <img src="images/logo.jpg" alt="" id="nav-img" />
+          <img src="images/logo.webp" alt="" id="nav-img" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
@@ -37,12 +38,15 @@
             <li class="nav-item">
               <a href="service.html" class="nav-link active">Services</a>
             </li>
+            <li class="nav-item">
+              <a href="contacts.html" class="nav-link">Contacts</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="section">
-      <div class="section-title2">
+      <div class="longc-title">
         <h1>Long Courses</h1>
       </div>
       <div class="cards-section">
@@ -61,12 +65,8 @@
                 </ul>
               </div>
               <div class="course-details">
-                <div class="price">
-                  <span>Tsh 1,500,000/=</span>
-                </div>
                 <div class="duration">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>18 Months</span>
+                  <span>Duration : 18 Months</span>
                 </div>
               </div>
             </div>
@@ -85,12 +85,8 @@
                 </ul>
               </div>
               <div class="course-details">
-                <div class="price">
-                  <span>Tsh 2,400,000/=</span>
-                </div>
                 <div class="duration">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>1 Year</span>
+                  <span>Duration : 1 Year</span>
                 </div>
               </div>
             </div>
@@ -107,12 +103,8 @@
                 </ul>
               </div>
               <div class="course-details">
-                <div class="price">
-                  <span>Tsh 1,200,000/=</span>
-                </div>
                 <div class="duration">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>1 Year</span>
+                  <span>Duration : 1 Year</span>
                 </div>
               </div>
             </div>
@@ -129,6 +121,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -144,6 +137,9 @@
             <ul style="list-style: none">
               <li>Mafia/Swahili Street</li>
               <li>Blg No, 60, 4th Floor, Kariakoo</li>
+              <br />
+              <li>Upanga Branch</li>
+              <li>Mfaume Street, House No.26</li>
             </ul>
           </div>
           <div class="footer-col">
@@ -162,5 +158,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

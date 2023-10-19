@@ -17,16 +17,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="images/logo.jpg" />
+    <link rel="icon" href="images/logo.webp" />
     <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <section class="navigation">
       <nav class="navbar navbar-expand-md bg-dark navbar-dark py-2">
         <div class="container">
           <a href="index.html" class="navbar-brand">
-            <img src="images/logotransparent.png" alt="" id="nav-img" />
+            <img src="images/logotransparent.webp" alt="" id="nav-img" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
@@ -43,13 +44,19 @@
               <li class="nav-item">
                 <a href="service.html" class="nav-link">Services</a>
               </li>
+              <li class="nav-item">
+                <a href="contacts.html" class="nav-link">Contacts</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="preview">
         <div class="heading">
-          <h2>Welcome To The <span class="text-warning">Andalusia</span> World!</h2>
+          <h2>
+            Welcome To The
+            <span data-text="Andalusia World! " class="andalusia-text">Andalusia World! </span>
+          </h2>
           <p>
             Your one stop solution for the best tutoring, library services, counselling sessions and many more. To check out all our services click
             the link below!
@@ -57,7 +64,7 @@
           <a href="service.html"><button class="view-button">View All Services</button></a>
         </div>
         <div class="pic">
-          <img src="images/preview-img.png" alt="" />
+          <img src="images/preview-img.webp" alt="" />
         </div>
       </div>
     </section>
@@ -67,45 +74,51 @@
         <h2>ABOUT US</h2>
         <p>
           Welcome to Andalusia Training Center, We offer you a variery of services and courses including Library services, Free WiFi, Counselling
-          services and a variety of Courses, All at a reasonable price!. Click the link below to read more!
+          services and a variety of Courses, All at a reasonable price!.
+        </p>
+        <p>
+          Since the centre’s opening in 2018, the centre has educated over 600 students of all ages from as young as 10 years old to over 65 years
+          old. Graduates are also assisted with how to write CV and Interview preparation, making them competent for the job. Click the link below to
+          read more!
         </p>
         <a href="aboutus.html"><button class="about-button">View More</button></a>
       </div>
       <div class="about-pic">
-        <img src="images/about2.jpg" alt="" />
+        <img src="images/about2.webp" alt="" />
       </div>
     </div>
-
-    <div class="service">
-      <h2>OUR SERVICES</h2>
-      <section class="section">
-        <div class="cards-section">
-          <div class="cards d-flex gap-5 align-items-center justify-content-center flex-wrap">
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/lib2.jpg" alt="" id="library-img" />
-                <h3>Library</h3>
-                <p>Enjoy reading in an AC room!</p>
+    <div class="reveal">
+      <div class="service">
+        <h2>OUR SERVICES</h2>
+        <section class="section">
+          <div class="cards-section">
+            <div class="cards d-flex gap-5 align-items-center justify-content-center flex-wrap">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/lib5.webp" alt="" id="library-img" />
+                  <h3>Library</h3>
+                  <p>Enjoy reading in an AC room!</p>
+                </div>
               </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/counselling.jpg" alt="" class="img-fluid" />
-                <h3>Counselling</h3>
-                <p>Book your free counselling session now!</p>
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/counselling.webp" alt="" class="img-fluid" />
+                  <h3>Counselling</h3>
+                  <p>Book your free counselling session now!</p>
+                </div>
               </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="images/courses.png" alt="" id="courses-img" />
-                <h3>Courses</h3>
-                <p>Choose from a variety of courses that we offer!</p>
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/courses.webp" alt="" id="courses-img" />
+                  <h3>Courses</h3>
+                  <p>Choose from a variety of courses that we offer!</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <a href="service.html"><button class="service-button">View More</button></a>
-      </section>
+          <a href="service.html"><button class="service-button">View More</button></a>
+        </section>
+      </div>
     </div>
 
     <footer class="footerr">
@@ -117,6 +130,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -132,6 +146,9 @@
             <ul style="list-style: none">
               <li>Mafia/Swahili Street</li>
               <li>Blg No, 60, 4th Floor, Kariakoo</li>
+              <br />
+              <li>Upanga Branch</li>
+              <li>Mfaume Street, House No.26</li>
             </ul>
           </div>
           <div class="footer-col">
@@ -151,5 +168,29 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>

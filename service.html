@@ -11,15 +11,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="images/logo.jpg" />
+    <link rel="icon" href="images/logo.webp" />
     <link rel="stylesheet" href="service.css" />
     <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
   </head>
   <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand">
-          <img src="images/logo.jpg" alt="" id="nav-img" />
+          <img src="images/logo.webp" alt="" id="nav-img" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
@@ -36,6 +37,9 @@
             <li class="nav-item">
               <a href="service.html" class="nav-link active">Services</a>
             </li>
+            <li class="nav-item">
+              <a href="contacts.html" class="nav-link">Contacts</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,9 +49,8 @@
     </div>
     <div class="services">
       <div class="service">Library</div>
-      <div class="service" id="s1">Computer Training</div>
+      <div class="service" id="s1">Training</div>
       <div class="service" id="s2">Career Counselling</div>
-      <div class="service" id="s3">Free Wi-Fi</div>
     </div>
     <div class="cards-section">
       <div class="cards d-flex gap-5 align-items-center justify-content-center flex-wrap">
@@ -59,31 +62,43 @@
               Accounting and many more. Click the link below to explore more!
             </p>
             <p class="card-text">
-              <a href="shortcourse.html"><button>Short Courses</button></a>
+              <a href="shortcourse.html"><button>View Short Courses</button></a>
             </p>
           </div>
         </div>
         <div class="card text-center" id="card">
-          <img src="./images/longc.jpg" class="card-img-top rounded-0" alt="..." />
+          <img src="./images/longc.webp" class="card-img-top rounded-0" alt="..." />
           <div class="card-body">
             <p>
               We also offer long courses including Certificate in Business Operations Assistant , Certificate in Nursery School Teaching and
               Certificate in Secretary Course , Click the link below to view full details of each course!
             </p>
             <p class="card-text">
-              <a href="longcourses.html"><button>Long Courses</button> </a>
+              <a href="longcourses.html"><button>View Long Courses</button> </a>
             </p>
           </div>
         </div>
         <div class="card text-center" id="card">
-          <img src="./images/lang.jpg" class="card-img-top rounded-0" alt="..." />
+          <img src="./images/lang.webp" class="card-img-top rounded-0" alt="..." />
           <div class="card-body">
             <p>
               Learn to speak many different languages with Andalusia Training Center! We teach Arabic, English, Kiswahili, French, Chinese and
               Turkish. Get tutored by the most fluent speakers from each respective language!
             </p>
             <p class="card-text">
-              <a href="languages.html"><button>Languages</button> </a>
+              <a href="languages.html"><button>View Languages</button> </a>
+            </p>
+          </div>
+        </div>
+        <div class="card text-center" id="card">
+          <img src="./images/workshop.webp" class="card-img-top rounded-0" alt="..." />
+          <div class="card-body">
+            <p>
+              We conduct various workshops such as pubic speaking, sales and customer care workshop among others. We also conduct events such as
+              football tournaments and careers day. Click the link below to read more!
+            </p>
+            <p class="card-text">
+              <a href="workshop.html"><button>View Workshops</button> </a>
             </p>
           </div>
         </div>
@@ -98,6 +113,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="service.html">Services</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -113,6 +129,9 @@
             <ul style="list-style: none">
               <li>Mafia/Swahili Street</li>
               <li>Blg No, 60, 4th Floor, Kariakoo</li>
+              <br />
+              <li>Upanga Branch</li>
+              <li>Mfaume Street, House No.26</li>
             </ul>
           </div>
           <div class="footer-col">
@@ -131,5 +150,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
